@@ -1,0 +1,80 @@
+{% extends "base.html" %} 
+{% block title %}Sign Up{% endblock %} 
+{% block content %}
+
+<div class="signup-container">
+  <form method="POST" class="signup-form">
+    <h3 align="center">Registrace</h3>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        name="email"
+        placeholder="Enter email"
+      />
+    </div>
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstName"
+        name="firstName"
+        placeholder="Enter first name"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password1">Heslo</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password1"
+        name="password1"
+        placeholder="Enter password"
+      />
+    </div>
+    <div class="form-group">
+      <label for="password1">Heslo (potvrzení)</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password2"
+        name="password2"
+        placeholder="Confirm password"
+      />
+    </div>
+    <br />
+
+    <div class="form-group">
+      <label for="avatar">Vyberte si avatar:</label>
+      <div class="avatar-selection">
+        <label>
+          <input type="radio" name="avatar" value="avatar1.png" checked>
+          <img src="{{ url_for('static', filename='avatars/avatar1.png') }}" class="avatar-choice">
+        </label>
+        <label>
+          <input type="radio" name="avatar" value="avatar2.png">
+          <img src="{{ url_for('static', filename='avatars/avatar2.png') }}" class="avatar-choice">
+        </label>
+        <label>
+          <input type="radio" name="avatar" value="avatar3.png">
+          <img src="{{ url_for('static', filename='avatars/avatar3.png') }}" class="avatar-choice">
+        </label>
+        <label>
+          <input type="radio" name="avatar" value="avatar4.png">
+          <img src="{{ url_for('static', filename='avatars/avatar4.png') }}" class="avatar-choice">
+        </label>
+        <label>
+          <input type="radio" name="avatar" value="avatar5.png">
+          <img src="{{ url_for('static', filename='avatars/avatar5.png') }}" class="avatar-choice">
+        </label>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Registrovat</button>
+  </form>
+</div>
+
+{% endblock %}

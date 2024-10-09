@@ -1,0 +1,101 @@
+/* Reset základních stylů */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    width: 100%;
+    position:fixed; /* Zajistí, že lišta je v normálním toku stránky */
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-image: url('/static/images/background.png'); /* Vlož obrázek pozadí na celý dokument */
+    background-size: cover;  /* Obrázek pokryje celý prostor */
+    background-position: center center;  /* Vycentruje obrázek */
+    background-repeat: no-repeat;  /* Zabrání opakování obrázku */
+    background-attachment: fixed;  /* Zabrání pohybu obrázku při posouvání stránky */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;  /* Výška celé obrazovky */
+    
+}
+
+
+
+
+
+.signup-form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    max-width: 550px; /* Maximální šířka formuláře */
+    margin: 0 ;  /* Zajistí centrální zarovnání */
+}
+
+
+
+/* Stylování avatarů */
+.avatar-choice {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+
+.avatar-choice:hover {
+    border-color: #007bff;
+}
+
+.avatar-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.avatar-img:hover {
+    transform: scale(1.1);
+}
+
+/* Stylování uživatelského jména */
+.user-name {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+/* Ostatní nastavení */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3em;  /* Velikost písma, můžeš upravit dle potřeby */
+    color: #007bff;  /* Barva nadpisu */
+    font-weight: bold;  /* Tlusté písmo pro výraznost */
+    text-align: center;  /* Zarovnání na střed */
+    text-transform: uppercase;  /* Velká písmena pro všechny znaky */
+    letter-spacing: 2px;  /* Roztažení písmen pro lepší čitelnost */
+    margin-top: 20px;  /* Odstup od vršku stránky */
+    margin-bottom: 20px;  /* Odstup od spodní části */
+}
+
